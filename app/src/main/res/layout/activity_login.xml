@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+
+    android:visibility="visible"
+
+    tools:context=".LoginAcitivity">
+
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="User Email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userName"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <Button
+        android:id="@+id/login_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:onClick="onClickLogin"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:icon="@android:color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword"
+        app:layout_constraintVertical_bias="0.502"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/signUp_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="24dp"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+
+        android:visibility="visible"
+        app:icon="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toEndOf="@+id/login_button"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword"
+        app:layout_constraintVertical_bias="0.502"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/forget_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="93dp"
+        android:text="Forget Password?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:icon="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@id/login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/login_button"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
