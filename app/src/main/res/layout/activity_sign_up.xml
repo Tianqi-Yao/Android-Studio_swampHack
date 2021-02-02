@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    android:visibility="visible"
+
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="235dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/studnetName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name:"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/signup"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@id/signup"
+        app:layout_constraintTop_toBottomOf="@id/signup"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/signupEmail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="User Email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/studnetName"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@id/studnetName"
+        app:layout_constraintTop_toBottomOf="@id/studnetName"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <Spinner
+        android:id="@+id/spUniversity"
+        android:layout_width="358dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:entries="@array/university"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/signupEmail"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@id/signupEmail"
+        app:layout_constraintTop_toBottomOf="@id/signupEmail"
+        app:layout_constraintVertical_bias="0.077" />
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/signupPsw"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/spUniversity"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@id/spUniversity"
+        app:layout_constraintTop_toBottomOf="@id/spUniversity"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <EditText
+        android:id="@+id/signupPswrept"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Repeat Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/signupPsw"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@id/signupPsw"
+        app:layout_constraintTop_toBottomOf="@id/signupPsw"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <EditText
+        android:id="@+id/signupQ"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Security Question:"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/signupPswrept"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@id/signupPswrept"
+        app:layout_constraintTop_toBottomOf="@id/signupPswrept"
+        app:layout_constraintVertical_bias="0.077" />
+
+
+    <EditText
+        android:id="@+id/signupA"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Question Answer:"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/signupQ"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@id/signupQ"
+        app:layout_constraintTop_toBottomOf="@id/signupQ"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <Button
+        android:id="@+id/signupBtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="I'm Done!"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:iconPadding="20dp"
+        app:layout_constraintEnd_toEndOf="@id/signupA"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@id/signupA"
+        app:layout_constraintTop_toBottomOf="@id/signupA" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

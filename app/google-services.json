@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "804519651045",
+    "project_id": "swamphack-8bed7",
+    "storage_bucket": "swamphack-8bed7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804519651045:android:1f3fa2bc460e6f53b9560c",
+        "android_client_info": {
+          "package_name": "com.example.swamphack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804519651045-jv8vuj75lgtlopj18qtd2squ7p65c8vl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6eth6N2VZfHFkwza9GZDs6qbH7iKkfAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804519651045-jv8vuj75lgtlopj18qtd2squ7p65c8vl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

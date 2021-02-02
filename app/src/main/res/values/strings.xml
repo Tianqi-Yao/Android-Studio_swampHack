@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">swampHack</string>
+    <string-array name="university">
+        <item>Choose your University</item>
+        <item>The University of Florida</item>
+        <item>Georgia State University</item>
+        <item>Stevnes Institute of Technology</item>
+    </string-array>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+</resources>
